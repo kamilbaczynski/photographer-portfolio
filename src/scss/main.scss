@@ -1,6 +1,8 @@
 @import "_normalize";
 @import "_variables";
 
+@import "modules/section-main.scss";
+
 
 html {
   box-sizing: border-box;
@@ -11,6 +13,6 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: black;
+  background: white;
 }
