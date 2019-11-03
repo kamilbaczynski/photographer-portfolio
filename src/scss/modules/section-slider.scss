@@ -1,0 +1,31 @@
+.slider-section {
+
+  min-height: 700px;
+  position: relative;
+
+  &__images {
+
+  }
+
+  &__button {
+    display: none;
+
+    &--left {
+      position: absolute;
+    }
+    
+    &--right {
+      position: absolute;
+    }
+  }
+}
+
+.slider {
+
+  &__photo {
+
+    &--first {
+      width: 100%;
+    }
+  }
+}
