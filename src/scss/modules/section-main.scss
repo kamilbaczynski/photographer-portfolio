@@ -4,14 +4,14 @@
 	background-position: top right;
   min-height: 100vh;
   position: relative;
-  padding: 150px 0 0 150px;
+  padding: 200px 0 0 200px;
  
 
 	&__header--before {
     margin: 0;
     padding: 0;
 
-    color: #333333;
+    color: $grey;
     font-family: "Bebas Neue";
     font-size: 73px;
     font-weight: 300;
@@ -20,7 +20,7 @@
 	&__header {
     margin: 0;
     padding: 0;
-    color: #5a5aff;
+    color: $blue;
     font-family: "Bebas Neue";
     font-size: 104px;
     font-weight: 400;
@@ -29,7 +29,7 @@
 	&__header--after {
     margin: 0 0 120px 0;
     padding: 0;
-    color: #333333;
+    color: $grey;
     font-family: "Bebas Neue";
     font-size: 73px;
     font-weight: 400;
@@ -44,7 +44,7 @@
     border-radius: 4px;
     margin: 0;
     padding: 17px 54px;
-    color: #333333;
+    color: $grey;
     font-family: Raleway;
     font-size: 18px;
     font-weight: 700;
@@ -52,7 +52,7 @@
   }
   
 	&__navigation-button {
-    color: #5a5aff;
+    color: $blue;
     font-size: 35px;
     display: block;
     position: absolute;
