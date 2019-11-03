@@ -2,21 +2,63 @@
 	background-image: url(../assets/img/main-background.png);
 	background-repeat: no-repeat;
 	background-position: top right;
-	min-height: 100vh;
+  min-height: 100vh;
+  position: relative;
+  padding: 150px 0 0 150px;
+ 
 
 	&__header--before {
+    margin: 0;
+    padding: 0;
 
-	}
+    color: #333333;
+    font-family: "Bebas Neue";
+    font-size: 73px;
+    font-weight: 300;
+  }
+  
 	&__header {
-
-	}
+    margin: 0;
+    padding: 0;
+    color: #5a5aff;
+    font-family: "Bebas Neue";
+    font-size: 104px;
+    font-weight: 400;
+  }
+  
 	&__header--after {
-
-	}
+    margin: 0 0 120px 0;
+    padding: 0;
+    color: #333333;
+    font-family: "Bebas Neue";
+    font-size: 73px;
+    font-weight: 400;
+  }
+  
 	&__view-more {
-
-	}
+    display: inline-block;
+    width: 214px;
+    height: 54px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.41);
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    margin: 0;
+    padding: 17px 54px;
+    color: #333333;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
 	&__navigation-button {
-		display: none;
+    color: #5a5aff;
+    font-size: 35px;
+    display: block;
+    position: absolute;
+    top: 50px;
+    right:50px;
+    background: none;
+    border: none;
 	}
 }
