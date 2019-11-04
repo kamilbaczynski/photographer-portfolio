@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="18" viewBox="0 0 8 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #efefef;
+      }
+    </style>
+  </defs>
+  <g id="Inteligentny_obiekt_wektorowy" data-name="Inteligentny obiekt wektorowy" transform="translate(-366.108 -1490.346)">
+    <path id="Path_2" data-name="Path 2" class="cls-1" d="M367.822,1508.346h3.429v-9H373.8l.312-3.6h-2.725v-1.439c0-.7.446-.866.758-.866h1.922v-3.083l-2.648-.012c-2.94,0-3.607,2.3-3.607,3.773v1.627h-1.7v3.6h1.714Z"/>
+  </g>
+</svg>
