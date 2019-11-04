@@ -1,0 +1,61 @@
+.project-section {
+	background-color: #f6f6f4;
+	padding: 140px 240px;
+	
+	&__header {
+		margin: 0 0 120px 0;
+		padding: 0;
+		color: #333333;
+		font-family: "Bebas Neue";
+		font-size: 50px;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	&__projects {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		grid-column-gap: 20px;
+
+	}
+
+}
+
+.project-type {
+	margin: auto 0;
+	padding: 0;
+	list-style-type: none;
+	color: #444e52;
+	font-family: "Raleway";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 48px;
+	color: #bfc3cf;
+
+	&__list-item {
+
+		&--checked {
+			color: $grey;
+		}
+
+	}
+
+}
+
+.project-photos {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	// display: flex;
+	// flex-flow: column wrap;
+	// justify-content: flex-start;
+	// align-content: flex-start;
+
+	&__list-item {
+		display: inline;
+		&--image {
+
+		}
+	}
+
+}
