@@ -548,4 +548,8 @@ body {
   color: black;
   background: white; }
 
+.contact-section {
+  background-image: url(../assets/img/contact-section-background.png);
+  min-height: 300px; }
+
 /*# sourceMappingURL=main.css.map */
