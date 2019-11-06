@@ -1,0 +1,72 @@
+.contact-section {
+  &__header {
+    margin: 0;
+    padding: 0;
+    color: $grey;
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__paragraph {
+    margin: 0;
+    padding: 0;
+    color: #4f4f4f;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  &__contact-form {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+  }
+
+}
+
+.contact-form {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-areas:
+  "contact-form__email contact-form__subject"
+  "contact-form__message contact-form__message"
+  "contact-form__send contact-form__send";
+
+
+  &__email {
+    grid-area: contact-form__email;
+    &--input {
+
+    }
+
+  }
+
+  &__subject {
+    grid-area: contact-form__subject;
+
+    &--input {
+      
+    }
+
+  }
+
+  &__message {
+    grid-area: contact-form__message;
+
+    &--input {
+      
+    }
+
+  }
+
+  &__send {
+    grid-area: contact-form__send;
+    &--input {
+      
+    }
+
+  }
+
+}
