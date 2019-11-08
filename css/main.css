@@ -319,21 +319,21 @@ template {
     margin: 0;
     padding: 0;
     color: #333333;
-    font-family: "Bebas Neue";
+    font-family: "bebas_neueregular";
     font-size: 73px;
     font-weight: 300; }
   .main-section__header {
     margin: 0;
     padding: 0;
     color: #5a5aff;
-    font-family: "Bebas Neue";
+    font-family: "bebas_neueregular";
     font-size: 104px;
     font-weight: 400; }
   .main-section__header--after {
     margin: 0 0 120px 0;
     padding: 0;
     color: #333333;
-    font-family: "Bebas Neue";
+    font-family: "bebas_neueregular";
     font-size: 73px;
     font-weight: 400; }
   .main-section__view-more {
@@ -534,6 +534,59 @@ template {
   color: #bfc3cf; }
   .skills-list__item--checked {
     color: #333333; }
+
+.contact-section__header {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center; }
+
+.contact-section__paragraph {
+  margin: 0;
+  padding: 0;
+  color: #4f4f4f;
+  font-family: Raleway;
+  font-size: 17px;
+  font-weight: 400; }
+
+.contact-section__contact-form {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 800px; }
+
+.contact-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+      grid-template-areas: "contact-form__email contact-form__subject" "contact-form__message contact-form__message" "contact-form__send contact-form__send"; }
+  .contact-form__email {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: contact-form__email; }
+  .contact-form__subject {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: contact-form__subject; }
+  .contact-form__message {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: contact-form__message; }
+  .contact-form__send {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: contact-form__send; }
+
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url("https://github.com/kamilbaczynski/photographer-portfolio/blob/font-test/src/scss/font/bebasneue-regular-webfont.woff2") format("woff2"), url("https://github.com/kamilbaczynski/photographer-portfolio/blob/font-test/src/scss/font/bebasneue-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
 html {
   -webkit-box-sizing: border-box;

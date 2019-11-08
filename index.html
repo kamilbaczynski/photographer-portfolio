@@ -160,28 +160,34 @@
 
     </section>
 
-    <section>
+    <section class="contact-section">
 
-      <h2>Say hello</h2>
-      <p>
+      <h2 class="contact-section__header">Say hello</h2>
+      <p class="contact-section__paragraph">
         Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
       </p>
 
-      <form action="">
+      <form class="contact-section__contact-form contact-form" action="">
 
-        <p>
-          <label for="email"></label>
-          <input type="email" name="email-contact-input" id="email" placeholder="Your e-mail">
+        <p class="contact-section__contact-form--email contact-form__email">
+          <label class="contact-form__email--label" for="email" ></label>
+          <input class="contact-form__email--input" type="email" name="email-contact-input" id="email" placeholder="Your e-mail">
         </p>
 
-        <p>
-          <label for="subject"></label>
-          <input type="text" name="subject-contact-input" id="subject" placeholder="Subject">
+        <p class="contact-section__contact-form--subject contact-form__subject">
+          <label class="contact-form__subject--label" for="subject"></label>
+          <input class="contact-form__subject--input" type="text" name="subject-contact-input" id="subject" placeholder="Subject">
         </p>
 
-        <label for="message"></label>
-        <textarea name="message-contact-input" id="message" ></textarea>
+        <p class="contact-section__contact-form--message contact-form__message">
+        <label class="contact-form__message--label" for="message"></label>
+        <textarea class="contact-form__message--textarea" name="message-contact-input" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        </p>
 
+        <p class="contact-section__contact-form--send contact-form__send">
+        <label class="contact-form__send--label" for="send"></label>
+        <input class="contact-form__send--input" type="submit" name="send-message-contact-input" id="send" value="Send message">
+        </p>
 
       </form>
 
