@@ -10,6 +10,15 @@
 @import "modules/section-skills.scss";
 @import "modules/section-contact.scss";
 
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url('bebasneue-regular-webfont.woff2') format('woff2'),
+       url('bebasneue-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 
 html {
   box-sizing: border-box;
