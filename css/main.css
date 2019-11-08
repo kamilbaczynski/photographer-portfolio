@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -319,21 +320,21 @@ template {
     margin: 0;
     padding: 0;
     color: #333333;
-    font-family: "bebas_neueregular";
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 73px;
     font-weight: 300; }
   .main-section__header {
     margin: 0;
     padding: 0;
     color: #5a5aff;
-    font-family: "bebas_neueregular";
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 104px;
-    font-weight: 400; }
+    font-weight: 700; }
   .main-section__header--after {
     margin: 0 0 120px 0;
     padding: 0;
     color: #333333;
-    font-family: "bebas_neueregular";
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 73px;
     font-weight: 400; }
   .main-section__view-more {
@@ -367,7 +368,7 @@ template {
     margin: 0;
     padding: 0 0 38px 0;
     color: #333333;
-    font-family: "Bebas Neue";
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 50px;
     font-weight: 400;
     text-align: center; }
@@ -476,7 +477,7 @@ template {
     margin: 0 0 120px 0;
     padding: 0;
     color: #333333;
-    font-family: "Bebas Neue";
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 50px;
     font-weight: 400;
     text-align: center; }
@@ -519,7 +520,7 @@ template {
       margin: 0 0 70px 0;
       padding: 0;
       color: #333333;
-      font-family: "Bebas Neue";
+      font-family: 'Roboto Condensed', sans-serif;
       font-size: 50px;
       font-weight: 400; }
 
@@ -539,7 +540,7 @@ template {
   margin: 0;
   padding: 0;
   color: #333333;
-  font-family: "Bebas Neue";
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 50px;
   font-weight: 400;
   text-align: center; }
@@ -581,12 +582,6 @@ template {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: contact-form__send; }
-
-@font-face {
-  font-family: 'bebas_neueregular';
-  src: url("https://github.com/kamilbaczynski/photographer-portfolio/blob/font-test/src/scss/font/bebasneue-regular-webfont.woff2") format("woff2"), url("https://github.com/kamilbaczynski/photographer-portfolio/blob/font-test/src/scss/font/bebasneue-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 
 html {
   -webkit-box-sizing: border-box;
