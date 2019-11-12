@@ -1,5 +1,6 @@
 .about-section {
-	padding: 100px 200px 94px;
+	min-height: 800px;
+  padding: 150px 150px 150px 150px;
 
 	&__header {
 		margin: 0;
@@ -13,13 +14,8 @@
 
 	&__informations {
 		display: grid;
-		grid-template-columns: minmax(590px, 1fr) 1fr;
-		grid-column-gap: 20px;
-
-		&--description {
-			min-width: 590px;
-		}
-
+		grid-template-columns: 2fr 1fr;
+		grid-column-gap: 50px;
 	}
 
 }
@@ -80,9 +76,12 @@
 
 .about-face {
 	&__photo {
-		min-height: 480px;
 		display: block;
+		width: 100%;
+		max-width: 350px;
+  	height: auto;
 		margin: 0 auto;
+
 	}
 
 	&__social-containter {
