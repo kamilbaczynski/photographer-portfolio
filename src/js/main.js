@@ -16,7 +16,24 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 
+const listItems = document.querySelectorAll('.project-type__list-item');
+const allImages = document.querySelectorAll('.project-photos__list-item');
 
-console.log(`Hello world!`);
-
-
+function toggleActiveClass(active){
+    listItems.forEach(item => {
+      item.classList.remove('active');
+    })
+    active.classList.add('active');
+}
+ 
+function toggleImages(dataClass){
+  for(let i = 0; i<allImages.length; i++)
+  allImages[i].dataset.class === dataClass ? allImages[i].style.display = 'inline-block' : allImages[i].style.display = 'none';
+}
+ 
+for(let i = 0; i < listItems.length; i++){
+  listItems[i].addEventListener('click', function(){
+    toggleActiveClass(listItems[i]);
+    toggleImages(listItems[i].dataset.class);
+  });
+}

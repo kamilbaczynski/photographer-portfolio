@@ -16,7 +16,6 @@
 		display: grid;
 		grid-template-columns: 1fr 3fr;
 		grid-column-gap: 20px;
-
 	}
 
 }
@@ -32,9 +31,15 @@
 	color: #bfc3cf;
 
 	&__list-item {
-		
-	}
 
+	}
+}
+
+.active {
+	color: black;
+}
+.images-landscape {
+ display: inline-block;
 }
 
 .project-photos {
@@ -42,12 +47,15 @@
 	padding: 0;
 
 	&__list-item {
-		display: inline;
+		display: none;
 		&--image {
 
 		}
 	}
+}
 
+.landscape {
+	display: inline-block;
 }
 
 .portrait {
