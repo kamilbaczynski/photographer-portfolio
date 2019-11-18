@@ -1,11 +1,6 @@
 .slider-section {
   background-color: #f6f6f4;
-
   position: relative;
-
-  &__images {
-
-  }
 
   &__button {
     position: absolute;
@@ -17,29 +12,32 @@
     background-repeat: no-repeat;
     background-position: center center;
 
-    
-
     &--left {
       left: 50px;
       border: none;
       transform: rotate(180deg)
-
     }
     
     &--right {
       right: 50px;
       border: none;
-
-
     }
+  }
+
+  &__slider {
+    max-width: 1vw;
   }
 }
 
-.slider {
+.slider-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
 
-  &__photo {
+  &__list-item {
 
-    &--first {
+    &--image {
       width: 100%;
     }
   }
