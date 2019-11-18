@@ -16,8 +16,8 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 
-const listItems = document.querySelectorAll('.project-type__list-item');
-const allImages = document.querySelectorAll('.project-photos__list-item');
+const listItems = document.querySelectorAll('.project-section__project-type--list-item-js');
+const allImages = document.querySelectorAll('.photos-list__list-item-js');
 
 function toggleActiveClass(active){
     listItems.forEach(item => {
@@ -28,7 +28,7 @@ function toggleActiveClass(active){
  
 function toggleImages(dataClass){
   for(let i = 0; i<allImages.length; i++)
-  allImages[i].dataset.class === dataClass ? allImages[i].style.display = 'inline-block' : allImages[i].style.display = 'none';
+  allImages[i].dataset.class === dataClass ? allImages[i].style.display = 'block' : allImages[i].style.display = 'none';
 }
  
 for(let i = 0; i < listItems.length; i++){
