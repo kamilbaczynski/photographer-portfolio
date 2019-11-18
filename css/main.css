@@ -544,11 +544,6 @@ template {
 .landscape {
   display: block; }
 
-.portrait {
-  max-width: 427px;
-  width: 100%;
-  height: 600px; }
-
 .skills-section {
   display: -ms-grid;
   display: grid;
