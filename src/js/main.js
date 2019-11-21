@@ -63,7 +63,7 @@ rightButton.addEventListener('click', function() {
 
 function showSlide() {
   var i;
-  if (slideIndex === sliderImages.length) {slideIndex = 1};
+  if (slideIndex > sliderImages.length) {slideIndex = 1};
   if (slideIndex === 0) {slideIndex = sliderImages.length};
   for (i = 0; i < sliderImages.length; i++) {
     sliderImages[i].style.display = "none";
