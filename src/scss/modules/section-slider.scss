@@ -2,26 +2,46 @@
   background-color: #f6f6f4;
   position: relative;
 
+  // &__button {
+  //   position: absolute;
+  //   top: 50%;
+  //   height: 50px;
+  //   width: 50px;
+  //   background-color: rgba(0, 0, 0, 0);
+  //   background-image: url('../assets/img/arrow.svg');
+  //   background-repeat: no-repeat;
+  //   background-position: center center;
+
+  //   &--left {
+  //     left: 50px;
+  //     border: none;
+  //     transform: rotate(180deg)
+  //   }
+    
+  //   &--right {
+  //     right: 50px;
+  //     border: none;
+  //   }
+  // }
+
   &__button {
     position: absolute;
     top: 50%;
     height: 50px;
     width: 50px;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url('../assets/img/arrow.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
+    border: none;
+    font-size: 40px;
+    color: #bfc3cf;
 
     &--left {
-      left: 50px;
-      border: none;
-      transform: rotate(180deg)
+      left: 20px;
     }
-    
+
     &--right {
-      right: 50px;
-      border: none;
+      right: 20px;
     }
+  
   }
 
   &__slider {
