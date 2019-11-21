@@ -16,6 +16,8 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 
+
+//Gallery filtering in section projects
 const listItems = document.querySelectorAll('.project-section__project-type--list-item-js');
 const allImages = document.querySelectorAll('.photos-list__list-item-js');
 
@@ -36,4 +38,36 @@ for(let i = 0; i < listItems.length; i++){
     toggleActiveClass(listItems[i]);
     toggleImages(listItems[i].dataset.class);
   });
+}
+
+
+// Slider in section slider
+
+const leftButton = document.querySelector('.slider-section__button--left');
+const rightButton = document.querySelector('.slider-section__button--right');
+const sliderImages = document.querySelectorAll('.slider-list__list-item');
+
+var slideIndex = 1;
+showSlide();
+
+leftButton.addEventListener('click', function() {
+  slideIndex -= 1;
+  showSlide();
+
+});
+
+rightButton.addEventListener('click', function() {
+  slideIndex += 1;
+  showSlide();
+});
+
+function showSlide() {
+  var i;
+  if (slideIndex === sliderImages.length) {slideIndex = 1};
+  if (slideIndex === 0) {slideIndex = sliderImages.length};
+  for (i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  };
+  
+  sliderImages[slideIndex - 1].style.display = "block";
 }
