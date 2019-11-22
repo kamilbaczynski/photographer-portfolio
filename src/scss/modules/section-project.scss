@@ -24,8 +24,19 @@
 		display: flex;
 		justify-content: center;
 		&--list-item {
-			margin: 0 15px;
+			padding: 0 15px;
+			margin: 0 3px;
+			border-radius: 3px;
+			transition: background-color 0.4s, color 0.4s;
+			&:hover {
+				background-color: grey;
+				color: white;
+			}
 		}
+	}
+
+	.active {
+		color: black;
 	}
 
 	&__project-photos {
@@ -50,10 +61,6 @@
 			margin: 5px			
 		}
 	}
-}
-
-.active {
-	color: black;
 }
 
 .landscape {
