@@ -18,27 +18,27 @@ if ('serviceWorker' in navigator) {
 
 
 //Gallery filtering in section projects
-const listItems = document.querySelectorAll('.project-section__project-type--list-item-js');
-const allImages = document.querySelectorAll('.photos-list__list-item-js');
+// const listItems = document.querySelectorAll('.project-section__project-type--list-item-js');
+// const allImages = document.querySelectorAll('.photos-list__list-item-js');
 
-function toggleActiveClass(active){
-    listItems.forEach(item => {
-      item.classList.remove('active');
-    })
-    active.classList.add('active');
-}
+// function toggleActiveClass(active){
+//     listItems.forEach(item => {
+//       item.classList.remove('active');
+//     })
+//     active.classList.add('active');
+// }
  
-function toggleImages(dataClass){
-  for(let i = 0; i<allImages.length; i++)
-  allImages[i].dataset.class === dataClass ? allImages[i].style.display = 'block' : allImages[i].style.display = 'none';
-}
+// function toggleImages(dataClass){
+//   for(let i = 0; i<allImages.length; i++)
+//   allImages[i].dataset.class === dataClass ? allImages[i].style.display = 'block' : allImages[i].style.display = 'none';
+// }
  
-for(let i = 0; i < listItems.length; i++){
-  listItems[i].addEventListener('click', function(){
-    toggleActiveClass(listItems[i]);
-    toggleImages(listItems[i].dataset.class);
-  });
-}
+// for(let i = 0; i < listItems.length; i++){
+//   listItems[i].addEventListener('click', function(){
+//     toggleActiveClass(listItems[i]);
+//     toggleImages(listItems[i].dataset.class);
+//   });
+// }
 
 
 // Slider in section slider
