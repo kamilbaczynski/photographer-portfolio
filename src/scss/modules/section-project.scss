@@ -1,7 +1,7 @@
 .project-section {
 	background-color: #f6f6f4;
-  padding: 150px 150px 150px 150px;
-	
+	padding: 150px 150px 150px 150px;
+
 	&__header {
 		margin: 0 0 50px 0;
 		padding: 0;
@@ -35,34 +35,34 @@
 		}
 	}
 
-	.active {
-		color: black;
-	}
-
-	&__project-photos {
-		&--list-item {
-			display: none;
-		}
+	&__photo-list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
 	}
 }
 
-.photos-list {
-	display: flex;
+.active {
+	color: black;
+}
+
+.photo-list {
+	&__list-item {
+		display: none;	
+		opacity: 1;
+	}
+}
+
+.visible {
+	display: block;
+}
+
+.photo-container {
+	display:flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-content: center;
-	margin: 0;
-	padding: 0;
-
-	&__list-item {
-		margin-bottom: -4px;
-		padding: 0;
-		&--image {
-			margin: 5px			
-		}
+	&__photo {
+		margin: 3px;
 	}
-}
-
-.landscape {
-	display: block;
 }
