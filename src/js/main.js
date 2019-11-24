@@ -16,10 +16,9 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 
-
-//Gallery filtering in section projects
+// Gallery filtering in section projects
 const listItems = document.querySelectorAll('.project-section__project-type--list-item-js');
-const allImages = document.querySelectorAll('.photos-list__list-item-js');
+const allImages = document.querySelectorAll('.photo-list__list-item--js');
 
 function toggleActiveClass(active){
     listItems.forEach(item => {
@@ -29,9 +28,24 @@ function toggleActiveClass(active){
 }
  
 function toggleImages(dataClass){
-  for(let i = 0; i<allImages.length; i++)
-  allImages[i].dataset.class === dataClass ? allImages[i].style.display = 'block' : allImages[i].style.display = 'none';
+  allImages.forEach ( image => {
+    image.classList.remove('visible');
+  });
+
+  for (let i = 0; i < allImages.length; i++)
+  if (allImages[i].dataset.class === dataClass) {
+    allImages[i].classList.add('visible');
+  }
 }
+
+// function toggleImages(dataClass){
+//  for(let i = 0; i < allImages.length; i++)
+//  if (allImages[i].dataset.class === dataClass) {
+//    allImages[i].style.display = 'block'}
+//  else {
+//    allImages[i].style.display = 'none'
+//  }
+// }
  
 for(let i = 0; i < listItems.length; i++){
   listItems[i].addEventListener('click', function(){
@@ -40,9 +54,7 @@ for(let i = 0; i < listItems.length; i++){
   });
 }
 
-
 // Slider in section slider
-
 const leftButton = document.querySelector('.slider-section__button--left');
 const rightButton = document.querySelector('.slider-section__button--right');
 const sliderImages = document.querySelectorAll('.slider-list__list-item');
@@ -53,7 +65,6 @@ showSlide();
 leftButton.addEventListener('click', function() {
   slideIndex -= 1;
   showSlide();
-
 });
 
 rightButton.addEventListener('click', function() {
