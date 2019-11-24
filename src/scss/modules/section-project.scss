@@ -1,7 +1,6 @@
 .project-section {
 	background-color: #f6f6f4;
 	padding: 150px 150px 150px 150px;
-	height: 1300px;
 
 	
 	&__header {
@@ -39,61 +38,33 @@
 
 	&__photo-list {
 		list-style-type: none;
-		background-color: white;
-		transition: background-color 1 linear;
-		&:hover {
-			background-color: black;
-		}
+		margin: 0;
+		padding: 0;
 	}
-
-}
-
-.button {
-	width: 50px;
-	height: 50px;
 }
 
 .active {
 	color: black;
 }
 
-.visible {
-	opacity: 1;
-	background-color: black;
-}
-
-.unvisible {
-	background-color: black;
-	
-}
-
 .photo-list {
-
-
+	
 	&__list-item {
-
-
+		display: none;	
+		opacity: 1;
 	}
-
 }
 
-.photos-list {
-	display: flex;
+.visible {
+	display: block;
+}
+
+.photo-container {
+	display:flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-content: center;
-	margin: 0;
-	padding: 0;
-
-	&__list-item {
-		margin-bottom: -4px;
-		padding: 0;
-		&--image {
-			margin: 5px			
-		}
+	&__photo {
+		margin: 3px;
 	}
-}
-
-.landscape {
-	display: block;
 }
