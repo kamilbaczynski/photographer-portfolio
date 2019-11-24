@@ -527,28 +527,21 @@ template {
         background-color: grey;
         color: white; }
   .project-section__photo-list {
-    list-style-type: none; }
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
 
 .active {
   color: black; }
 
-.button {
-  width: 50px;
-  height: 50px; }
-
-.photo-list {
-  margin: 0;
-  padding: 0; }
-  .photo-list__list-item {
-    display: none;
-    opacity: 1;
-    -webkit-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s; }
-    .photo-list__list-item--image {
-      margin: 3px; }
+.photo-list__list-item {
+  display: none;
+  opacity: 1; }
 
 .visible {
+  display: block; }
+
+.photo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,18 +553,9 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
-  list-style-type: none;
-  opacity: 1; }
-
-.photo-list {
-  margin: 0;
-  padding: 0; }
-  .photo-list__list-item {
-    margin-bottom: -4px;
-    padding: 0; }
-    .photo-list__list-item--image {
-      margin: 5px; }
+      align-content: center; }
+  .photo-container__photo {
+    margin: 3px; }
 
 .skills-section {
   display: -ms-grid;
