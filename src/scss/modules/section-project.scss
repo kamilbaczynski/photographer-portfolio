@@ -47,14 +47,21 @@
 }
 
 .photo-list {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row: 1;
+
 	&__list-item {
-		display: none;	
-		opacity: 1;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		opacity: 0;
 	}
 }
 
 .visible {
-	display: block;
+	opacity: 1;
 }
 
 .photo-container {
