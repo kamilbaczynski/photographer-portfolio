@@ -534,12 +534,26 @@ template {
 .active {
   color: black; }
 
-.photo-list__list-item {
-  display: none;
-  opacity: 1; }
+.photo-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-row: 1;
+  grid-row: 1; }
+  .photo-list__list-item {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: 2;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
+    opacity: 0; }
 
 .visible {
-  display: block; }
+  opacity: 1; }
 
 .photo-container {
   display: -webkit-box;
