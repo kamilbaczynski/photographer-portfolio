@@ -539,6 +539,8 @@ template {
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
   -ms-grid-row: 1;
   grid-row: 1; }
   .photo-list__list-item {
@@ -549,11 +551,19 @@ template {
     -ms-grid-column: 1;
         grid-column-start: 1;
     -ms-grid-column-span: 1;
-    grid-column-end: 2;
-    opacity: 0; }
+    grid-column-end: 2; }
 
 .visible {
-  opacity: 1; }
+  opacity: 1;
+  -webkit-transition: opacity 0.5s linear 1s;
+  -o-transition: opacity 0.5s linear 1s;
+  transition: opacity 0.5s linear 1s; }
+
+.unvisible {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear; }
 
 .photo-container {
   display: -webkit-box;
