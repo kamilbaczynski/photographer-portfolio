@@ -28,15 +28,41 @@ function toggleActiveClass(active){
 }
  
 function toggleImages(dataClass){
-  allImages.forEach ( image => {
-    image.classList.remove('visible');
-  });
 
   for (let i = 0; i < allImages.length; i++)
+
   if (allImages[i].dataset.class === dataClass) {
-    allImages[i].classList.add('visible');
+
+    if (allImages[i].classList.contains('visible')) {
+    } else {
+      allImages[i].classList.add('visible');
+      allImages[i].classList.remove('unvisible');
+    }
+
+  } else {
+
+    if (allImages[i].classList.contains('visible')) {
+      allImages[i].classList.add('unvisible');
+      allImages[i].classList.remove('visible');
+    } 
+
   }
 }
+
+
+// Second version
+
+// allImages.forEach ( image => {
+//   image.classList.remove('visible');
+// });
+
+// for (let i = 0; i < allImages.length; i++)
+// if (allImages[i].dataset.class === dataClass) {
+//   allImages[i].classList.add('visible');
+// }
+
+
+// First Version
 
 // function toggleImages(dataClass){
 //  for(let i = 0; i < allImages.length; i++)
@@ -46,6 +72,7 @@ function toggleImages(dataClass){
 //    allImages[i].style.display = 'none'
 //  }
 // }
+
  
 for(let i = 0; i < listItems.length; i++){
   listItems[i].addEventListener('click', function(){
@@ -53,6 +80,8 @@ for(let i = 0; i < listItems.length; i++){
     toggleImages(listItems[i].dataset.class);
   });
 }
+
+
 
 // Slider in section slider
 const leftButton = document.querySelector('.slider-section__button--left');

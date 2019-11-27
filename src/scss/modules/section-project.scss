@@ -57,13 +57,17 @@
 		grid-row-end: 2;
 		grid-column-start: 1;
 		grid-column-end: 2;
-		opacity: 0;
-		transition: opacity 0.5s linear;
 	}
 }
 
 .visible {
 	opacity: 1;
+	transition: opacity 0.5s linear 0.5s;
+}
+
+.unvisible {
+	opacity: 0;
+	transition: opacity 0.5s linear;
 }
 
 .photo-container {
