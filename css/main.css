@@ -555,9 +555,9 @@ template {
 
 .visible {
   opacity: 1;
-  -webkit-transition: opacity 0.5s linear 1s;
-  -o-transition: opacity 0.5s linear 1s;
-  transition: opacity 0.5s linear 1s; }
+  -webkit-transition: opacity 0.5s linear 0.5s;
+  -o-transition: opacity 0.5s linear 0.5s;
+  transition: opacity 0.5s linear 0.5s; }
 
 .unvisible {
   opacity: 0;
