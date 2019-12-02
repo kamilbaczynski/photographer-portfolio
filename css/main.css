@@ -495,6 +495,38 @@ template {
       left: 20px; }
     .slider-section__button--right {
       right: 20px; }
+  .slider-section__dots-container {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .slider-section__dots-container--input {
+      display: none; }
+    .slider-section__dots-container--labels {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 20px;
+      text-align: center; }
+
+.labels-container__label {
+  display: inline-block;
+  margin: 0 5px;
+  height: 15px;
+  width: 15px;
+  border: 2px solid white;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.5s linear;
+  -o-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear; }
+
+.checked {
+  background-color: white; }
 
 .photo-slide-container__photo {
   display: block;
