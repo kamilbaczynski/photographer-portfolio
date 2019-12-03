@@ -42,6 +42,43 @@
       right: 20px;
     }
   }
+
+  &__dots-container {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+
+    &--input {
+      display: none;
+    }
+
+    &--labels {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.labels-container {
+
+  &__label {
+    display: inline-block;
+    margin: 0 5px;
+    height: 15px;
+    width: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: background-color 0.5s linear;
+  }
+}
+
+.checked {
+  background-color: white;
 }
 
 .photo-slide-container {

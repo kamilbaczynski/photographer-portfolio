@@ -86,22 +86,54 @@ for(let i = 0; i < listItems.length; i++){
 const leftButton = document.querySelector('.slider-section__button--left');
 const rightButton = document.querySelector('.slider-section__button--right');
 const sliderContainer = document.querySelector('.slider-section__slider-containter');
+const dots = document.querySelectorAll('.labels-container__label--js');
 
 const positions = ["left: 0", "left: -100%", "left: -200%", "left: -300%"];
 
 var sliderPosition = 0;
+checkedDot();
+
+dots[0].addEventListener('click', function() {
+  sliderContainer.style = `${positions[dots[0].dataset.pos]}`
+  sliderPosition = dots[0].dataset.pos;
+  checkedDot();
+})
+dots[1].addEventListener('click', function() {
+  sliderContainer.style = `${positions[dots[1].dataset.pos]}`
+  sliderPosition = dots[1].dataset.pos;
+  checkedDot();
+})
+dots[2].addEventListener('click', function() {
+  sliderContainer.style = `${positions[dots[2].dataset.pos]}`
+  sliderPosition = dots[2].dataset.pos;
+  checkedDot();
+})
+dots[3].addEventListener('click', function() {
+  sliderContainer.style = `${positions[dots[3].dataset.pos]}`
+  sliderPosition = dots[3].dataset.pos;
+  checkedDot();
+})
 
 leftButton.addEventListener('click', function() {
   sliderPosition -= 1;
   if (sliderPosition < 0 ) { sliderPosition = 3}
   sliderContainer.style = `${positions[sliderPosition]}`
+  checkedDot()
 });
 
 rightButton.addEventListener('click', function() {
   sliderPosition += 1;
   if (sliderPosition > 3 ) { sliderPosition = 0}
   sliderContainer.style = `${positions[sliderPosition]}`
+  checkedDot()
 });
+
+function checkedDot() {
+  dots.forEach( dot => {
+    dot.classList.remove('checked')
+  })
+  dots[sliderPosition].classList.add('checked')
+}
 
 
 // FIRST VERSION SLIDER
