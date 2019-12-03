@@ -44,7 +44,7 @@
 
       <div class="about-section__informations">
 
-        <div class="about-section__informations--description about-description">
+        <article class="about-section__informations--description about-description">
 
           <h3 class="about-description__header">
             Hi, i’m Paul Lapkin, Experience Crafter from Canada.
@@ -61,22 +61,23 @@
             irure dolor in reprehenderit in voluptate commodo consequat. Duis aute irure dolor.
           </p>
 
-          <a class="about-description__link about-description__link--hire" href="#">HIRE ME!</a>
-          <a class="about-description__link about-description__link--download" href="#">DOWNLOAD CV</a>
+          <div class="about-description__links links-container">
 
-        </div>
+            <a class="links-container__hire-link" href="#">HIRE ME!</a>
+
+            <a class="links-container__social links-container__social--facebook" href="#" target="_blank" rel="nofollow noreferrer"  title="facebook"></a>
+            <a class="links-container__social links-container__social--instagram" href="#" target="_blank" rel="nofollow noreferrer"  title="instagram"></a>
+            <a class="links-container__social links-container__social--tweeter" href="#" target="_blank" rel="nofollow noreferrer"  title="tweeter"></a>
+            <a class="links-container__social links-container__social--pinterest" href="#" target="_blank" rel="nofollow noreferrer"  title="pinterest"></a>
+          
+          </div>
+          
+        </article>
 
         <div class="about-section__informations--face about-face">
 
-          <img class="about-face__photo" src="assets/img/my-photo-medal.png" alt="My photo with a medal on a neck taken after marathon.">
-          
-          <div class="about-face__social-containter">
-            <a class="about-face__link about-face__link--facebook" href="#" target="_blank" rel="nofollow noreferrer"  title="facebook"></a>
-            <a class="about-face__link about-face__link--instagram" href="#" target="_blank" rel="nofollow noreferrer"  title="instagram"></a>
-            <a class="about-face__link about-face__link--tweeter" href="#" target="_blank" rel="nofollow noreferrer"  title="tweeter"></a>
-            <a class="about-face__link about-face__link--pinterest" href="#" target="_blank" rel="nofollow noreferrer"  title="pinterest"></a>
-          </div>
-
+          <img class="about-face__photo" src="assets/img/my-photo.jpg" alt="Photograph of me holding camera Canon 6D.">
+        
         </div>
         
       </div>
@@ -120,7 +121,7 @@
         <input class="slider-section__dots-container--input" type="radio" name="slide" id="slide-4">
       
         <div class="slider-section__dots-container--labels labels-container">
-          <label class="labels-container__label labels-container__label--js" for="slide-1" data-pos="0"></label>
+          <label class="labels-container__label labels-container__label--js checked" for="slide-1" data-pos="0"></label>
           <label class="labels-container__label labels-container__label--js" for="slide-2" data-pos="1"></label>
           <label class="labels-container__label labels-container__label--js" for="slide-3" data-pos="2"></label>
           <label class="labels-container__label labels-container__label--js" for="slide-4" data-pos="3"></label>

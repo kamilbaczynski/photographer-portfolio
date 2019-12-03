@@ -397,31 +397,64 @@ template {
   font-family: 'Raleway';
   font-size: 17px;
   font-weight: 400;
-  line-height: 32px; }
+  line-height: 32px;
+  text-align: justify; }
   .about-description__paragraph--first {
     margin: 0 0 40px 0; }
   .about-description__paragraph--second {
     margin: 0 0 60px 0; }
 
-.about-description__link {
-  display: inline-block;
-  width: 214px;
-  height: 54px;
-  border: 1px solid #4f4f4f;
-  border-radius: 4px;
-  margin: 5px;
-  color: #FFFFFF;
-  font-family: 'Raleway';
-  font-size: 18px;
-  font-weight: 700;
-  text-decoration: none;
-  letter-spacing: 1.4px; }
-  .about-description__link--hire {
+.links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0; }
+  .links-container__hire-link {
+    display: inline-block;
+    width: 214px;
+    height: 54px;
+    margin: 5px 80px 5px 20px;
+    padding: 17px 58px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1.4px;
+    background-color: #333333; }
+  .links-container__social {
+    display: inline-block;
+    margin: 0 10px;
     background-color: #333333;
-    padding: 17px 58px; }
-  .about-description__link--download {
-    background-color: #5a5aff;
-    padding: 17px 29px; }
+    width: 33px;
+    height: 33px;
+    margin: 5px 10px; }
+    .links-container__social--facebook {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("../assets/img/facebook-logo.svg"); }
+    .links-container__social--instagram {
+      background-color: #5a5aff;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("../assets/img/instagram-logo.svg"); }
+    .links-container__social--tweeter {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("../assets/img/tweeter-logo.svg"); }
+    .links-container__social--pinterest {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("../assets/img/pinterest-logo.svg"); }
 
 .about-face__photo {
   display: block;
@@ -429,39 +462,6 @@ template {
   max-width: 350px;
   height: auto;
   margin: 0 auto; }
-
-.about-face__social-containter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0; }
-
-.about-face__link {
-  margin: 0 10px;
-  background-color: #333333;
-  display: inline-block;
-  width: 33px;
-  height: 33px; }
-  .about-face__link--facebook {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("../assets/img/facebook-logo.svg"); }
-  .about-face__link--instagram {
-    background-color: #5a5aff;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("../assets/img/instagram-logo.svg"); }
-  .about-face__link--tweeter {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("../assets/img/tweeter-logo.svg"); }
-  .about-face__link--pinterest {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("../assets/img/pinterest-logo.svg"); }
 
 .slider-section {
   position: relative;
@@ -483,18 +483,27 @@ template {
     opacity: 0; }
   .slider-section__button {
     position: absolute;
-    top: 50%;
-    height: 50px;
-    width: 50px;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 80px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     font-size: 40px;
     color: #bfc3cf;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+    z-index: 1; }
+    .slider-section__button:hover {
+      background-color: rgba(0, 0, 0, 0.4); }
     .slider-section__button--left {
-      left: 20px; }
+      left: 0;
+      padding-left: 40px; }
     .slider-section__button--right {
-      right: 20px; }
+      right: 0;
+      padding-right: 40px; }
   .slider-section__dots-container {
     width: 100%;
     position: absolute;
