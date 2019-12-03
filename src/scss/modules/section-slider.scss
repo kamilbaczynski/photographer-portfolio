@@ -25,21 +25,29 @@
 
   &__button {
     position: absolute;
-    top: 50%;
-    height: 50px;
-    width: 50px;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 80px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     font-size: 40px;
     color: #bfc3cf;
     cursor: pointer;
+    transition: background-color 0.3s linear;
+    z-index: 1;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.4)
+    }
 
     &--left {
-      left: 20px;
+      left: 0;
+      padding-left: 40px;
     }
 
     &--right {
-      right: 20px;
+      right: 0;
+      padding-right: 40px
     }
   }
 
