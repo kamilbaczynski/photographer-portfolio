@@ -78,8 +78,10 @@
 		text-decoration: none;
 		letter-spacing: 1.4px;
 		background-color: $grey;
-
-
+		transition: background-color 0.3s linear;
+		&:hover {
+			background-color: $blue;
+		}
 	}
 
 	&__social {
@@ -89,6 +91,10 @@
 		width: 33px;
 		height: 33px;
 		margin: 5px 10px;
+		transition: 0.3s linear;
+		&:hover {
+			background-color: $blue;
+		}
 
 
 		&--facebook {
@@ -98,7 +104,6 @@
 		}
 
 		&--instagram {
-			background-color: $blue;
 			background-repeat: no-repeat;
 			background-position: center center;
 			background-image: url('../assets/img/instagram-logo.svg');
