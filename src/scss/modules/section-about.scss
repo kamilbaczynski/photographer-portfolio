@@ -14,7 +14,7 @@
 
 	&__informations {
 		display: grid;
-		grid-template-columns: 2fr 1fr;
+		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 50px;
 	}
 
@@ -129,7 +129,8 @@
 	&__photo {
 		display: block;
 		width: 100%;
-		max-width: 350px;
+		min-width: 300px;
+		max-width: 450px;
   	height: auto;
 		margin: 0 auto;
 
