@@ -6,45 +6,40 @@
   height: 100vh;
   position: relative;
   margin: 0;
-  padding: 150px 0 150px 150px;
+  padding: 70px 100px 100px 100px;
+  color: rgb(221, 221, 221);
 
-	&__header--before {
-    margin: 0 0 15px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+	&__header--name {
+    margin: 0;
     padding: 0;
-    color: $grey;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 73px;
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 100px;
     font-weight: 300;
   }
   
-	&__header {
-    margin: 0 0 15px 0;
+	&__header--vocation {
+    margin: 0;
     padding: 0;
-    color: $blue;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 104px;
-    font-weight: 700;
+
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 70px;
+    font-weight: 300;
   }
   
-	&__header--after {
-    margin: 0 0 50px 0;
-    padding: 0;
-    color: $grey;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 73px;
-    font-weight: 400;
-  }
-  
-	&__view-more {
+	&__link {
     display: inline-block;
     width: 214px;
     height: 54px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.41);
-    border: 1px solid #4f4f4f;
+    color: rgb(221, 221, 221);
+    border: 2px solid rgb(221, 221, 221);
     border-radius: 4px;
     margin: 0;
-    padding: 17px 54px;
-    color: $grey;
+    padding: 15px 50px;
     font-family: 'Raleway';
     font-size: 18px;
     font-weight: 700;
@@ -52,7 +47,7 @@
   }
   
 	&__navigation-button {
-    color: $blue;
+    color: rgb(221, 221, 221);
     font-size: 35px;
     display: block;
     position: absolute;
