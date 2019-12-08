@@ -95,22 +95,22 @@ checkedDot();
 
 dots[0].addEventListener('click', function() {
   sliderContainer.style = `${positions[dots[0].dataset.pos]}`
-  sliderPosition = dots[0].dataset.pos;
+  sliderPosition = 0;
   checkedDot();
 })
 dots[1].addEventListener('click', function() {
   sliderContainer.style = `${positions[dots[1].dataset.pos]}`
-  sliderPosition = dots[1].dataset.pos;
+  sliderPosition = 1;
   checkedDot();
 })
 dots[2].addEventListener('click', function() {
   sliderContainer.style = `${positions[dots[2].dataset.pos]}`
-  sliderPosition = dots[2].dataset.pos;
+  sliderPosition = 2;
   checkedDot();
 })
 dots[3].addEventListener('click', function() {
   sliderContainer.style = `${positions[dots[3].dataset.pos]}`
-  sliderPosition = dots[3].dataset.pos;
+  sliderPosition = 3;
   checkedDot();
 })
 
