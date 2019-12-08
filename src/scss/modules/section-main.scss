@@ -1,13 +1,10 @@
 .main-section {
-  background-image: url(../assets/img/main-background.png);
+  background-image: url(../assets/img/main-background.jpg);
 	background-repeat: no-repeat;
-  background-position-y: bottom 50px;
-  background-position-x: right;
-  background-size: contain;
-
-  min-height: 800px;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
   position: relative;
-
   margin: 0;
   padding: 150px 0 150px 150px;
 
