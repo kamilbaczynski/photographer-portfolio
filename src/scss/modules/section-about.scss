@@ -1,10 +1,10 @@
 .about-section {
-	min-height: 800px;
-  padding: 150px 150px 150px 150px;
+	min-height: 100vh;
+  padding: 100px 20px 100px 100px;
 
 	&__header {
-		margin: 0;
-		padding: 0 0 38px 0;
+		margin: 0 0 40px 0;
+		padding: 0;
 		color: $grey;
 		font-family: 'Roboto Condensed', sans-serif;
 		font-size: 50px;
@@ -21,53 +21,31 @@
 }
 
 .about-description {
+	max-width: 1fr;
+	min-width: 300px;
+	color: $grey;
+	font-family: 'Raleway';
 
 	&__header {
-		margin: 60px 0 45px 0;
-		color: #000000;
-		font-family: 'Raleway';
-		font-size: 18px;
+		margin: 20px 0 20px 0;
+		font-size: 20px;
 		font-weight: 700;
+		text-align: justify;
 	}
 
 	&__paragraph {
-		opacity: 0.6;
-		color: #000000;
-		font-family: 'Raleway';
+		margin: 0 0 20px 0;
 		font-size: 17px;
 		font-weight: 400;
 		line-height: 32px;
 		text-align: justify;
-
-		&--first {
-			margin: 0 0 40px 0;
-		}
-
-		&--second {
-			margin: 0 0 60px 0;
-		}
 	}
-
-	&__links {
-
-	}
-
-}
-
-.links-container {
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0;
-	margin: 0;
-	
 
 	&__hire-link {
-
-		display: inline-block;
+		display: block;
     width: 214px;
 		height: 54px;
-		margin: 5px 80px 5px 20px;
+		margin: auto;
 		padding: 17px 58px;
     border: 1px solid #4f4f4f;
     border-radius: 4px;
@@ -84,18 +62,26 @@
 		}
 	}
 
-	&__social {
+	&__social-container {
+		margin: 30px 0 50px 0;
+	}
+}
+
+.social-container {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+	&__link {
 		display: inline-block;
-		margin: 0 10px;
+		margin: 0 25px;
 		background-color: $grey;
 		width: 33px;
 		height: 33px;
-		margin: 5px 10px;
 		transition: 0.3s linear;
 		&:hover {
 			background-color: $blue;
 		}
-
 
 		&--facebook {
 			background-repeat: no-repeat;
@@ -120,7 +106,6 @@
 			background-position: center center;
 			background-image: url('../assets/img/pinterest-logo.svg');
 		}
-
 	}
 }
 
@@ -128,10 +113,10 @@
 .about-face {
 	&__photo {
 		display: block;
+		min-width: 150px;
 		width: 100%;
-		min-width: 300px;
-		max-width: 450px;
-  	height: auto;
+		max-width: 400px;
+		height: auto;
 		margin: 0 auto;
 
 	}
