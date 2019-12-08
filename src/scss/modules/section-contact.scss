@@ -1,7 +1,24 @@
 .contact-section {
+  position: relative;
+  padding: 50px 20px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../assets/img/contact-section-background.png);
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+    overflow: hidden;
+  }
+
   &__header {
     margin: 0;
-    padding: 0;
+    padding: 20px 0;
     color: $grey;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 50px;
@@ -11,68 +28,89 @@
 
   &__paragraph {
     margin: 0;
-    padding: 0;
+    padding-bottom: 20px;
     color: #4f4f4f;
     font-family: 'Raleway';
     font-size: 17px;
     font-weight: 400;
+    text-align: center;
   }
 
   &__contact-form {
     margin: 0 auto;
-    padding: 0;
     max-width: 800px;
+    width: 100%;
   }
-
 }
 
 .contact-form {
- display: grid;
- grid-template-columns: 1fr 1fr;
- grid-template-areas:
+  font-family: 'Raleway';
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-template-areas:
   "contact-form__email contact-form__subject"
   "contact-form__message contact-form__message"
   "contact-form__send contact-form__send";
 
-
   &__email {
+    width: 100%;
     grid-area: contact-form__email;
-    &--input {
-
-    }
-
   }
 
   &__subject {
+    width: 100%;
     grid-area: contact-form__subject;
-
-    &--input {
-      
-    }
-
   }
 
   &__message {
+    width: 100%;
     grid-area: contact-form__message;
 
     &--input {
-      
+      resize: none;
     }
-
   }
 
   &__send {
+    text-align: center;
+    
     grid-area: contact-form__send;
     &--input {
-      
+      font-size: 20px;
+      width: 200px;
+      height: 50px;
+      color: black;
+      background: rgba(79, 79, 79, 0.7);
+      cursor: pointer;
+      &:focus {
+        background-color: rgba(90, 90, 255, 0.7);
+      }
+      &:hover {
+        background-color: rgba(90, 90, 255, 0.7);
+      }
     }
-
   }
+}
 
+input, textarea {
+  background: transparent;
+  border: 1px solid #4f4f4f;
+  padding: 2px;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color .3s linear;
+  &:focus {
+    background: rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  &::placeholder {
+    color: #4f4f4f;
+  }
 }
 
 .footer {
-  height: 115px;
+  height: 40px;
   margin: 0;
   padding: 0;
   background-color: $grey;
@@ -89,5 +127,4 @@
     font-weight: 700;
     letter-spacing: 0.72px;
   }
-
 }
