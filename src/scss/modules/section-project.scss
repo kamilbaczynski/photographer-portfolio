@@ -72,11 +72,16 @@
 }
 
 .photo-container {
-	display:flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-content: center;
+	max-width: 80vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
 	&__photo {
-		margin: 3px;
+		width: 100%;
+		min-width: 200px;
+		height: auto;
+	
 	}
+		
 }
