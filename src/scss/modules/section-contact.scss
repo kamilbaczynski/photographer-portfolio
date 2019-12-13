@@ -2,6 +2,10 @@
   position: relative;
   padding: 50px 20px;
 
+  @include for-phone-only {
+    padding: 30px;
+  }
+
   &:after {
     content: "";
     position: absolute;
@@ -24,6 +28,12 @@
     font-size: 50px;
     font-weight: 400;
     text-align: center;
+
+    @include for-phone-only {
+      padding: 0;
+      margin: 0 0 10px 0;
+      font-size: 25px;
+    }
   }
 
   &__paragraph {
@@ -34,6 +44,11 @@
     font-size: 17px;
     font-weight: 400;
     text-align: center;
+    
+    @include for-phone-only {
+      padding: 0;
+      font-size: 16px;
+    }
   }
 
   &__contact-form {
@@ -83,11 +98,18 @@
       color: black;
       background: rgba(79, 79, 79, 0.7);
       cursor: pointer;
+
       &:focus {
         background-color: rgba(90, 90, 255, 0.7);
+        @include for-phone-only {
+          background: rgba(79, 79, 79, 0.7);
+        }
       }
       &:hover {
         background-color: rgba(90, 90, 255, 0.7);
+        @include for-phone-only {
+          background: rgba(79, 79, 79, 0.7);
+        }
       }
     }
   }
@@ -118,6 +140,10 @@ input, textarea {
   justify-content: center;
   align-items: center;
 
+  @include for-phone-only {
+    height: 20px;
+  }
+
   &__paragraph {
     margin: 0;
     padding: 0;
@@ -126,5 +152,9 @@ input, textarea {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.72px;
+
+    @include for-phone-only {
+      font-size: 12px;
+    }
   }
 }

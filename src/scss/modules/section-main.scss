@@ -8,11 +8,15 @@
   margin: 0;
   padding: 70px 100px 100px 100px;
   color: rgb(221, 221, 221);
-
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
+  
+  @include for-phone-only {
+    padding: 120px 0 120px 30px;
+    min-height: 100vh;
+  }
 
 	&__header--name {
     margin: 0;
@@ -20,6 +24,10 @@
     font-family: 'Patrick Hand SC', cursive;
     font-size: 100px;
     font-weight: 300;
+
+    @include for-phone-only {
+      font-size: 50px;
+    }
   }
   
 	&__header--vocation {
@@ -28,6 +36,10 @@
     font-family: 'Patrick Hand SC', cursive;
     font-size: 70px;
     font-weight: 300;
+
+    @include for-phone-only {
+      font-size: 40px;
+    }
   }
   
 	&__link {
@@ -44,12 +56,22 @@
     font-weight: 700;
     text-decoration: none;
     transition: background-color 0.3s linear, border 0.3s linear;
+
     &:hover {
       background-color: rgba(221, 221, 221, 0.3);
       border: 2px solid rgba(221, 221, 221, 0.3);
     }
+
     &:focus {
       outline-color: rgb(221, 221, 221);
+    }
+
+    @include for-phone-only {
+      font-size: 12px;
+      width: 130px;
+      height: 40px;
+      padding: 12px 25px;
+      margin: 0 0;
     }
 
   }
@@ -66,6 +88,12 @@
 
     &:focus {
       outline-color: rgb(221, 221, 221);
+    }
+
+    @include for-phone-only {
+      font-size: 25px;
+      top: 15px;
+      right: 15px;
     }
 	}
 }
